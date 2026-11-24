@@ -29,6 +29,8 @@ def count_sentences(text):
 
 
 def main():
+    """Validate the single-sentence entry against the competition gate,
+    then write it verbatim to /output/entry.txt."""
     # Gate checks, mirroring the competition's own gate.
     assert 1 <= len(ENTRY) <= MAX_CHARS, (
         f"entry must be 1-{MAX_CHARS} characters, got {len(ENTRY)}"
